@@ -31,7 +31,7 @@ class String
     counter =0
     sent = self.split
     sent.each do |sent|
-    if sent.question? | sent.sentence? | sent.exclamation?
+    if sent.question? || sent.sentence? || sent.exclamation?
       counter +=1
     end
     end
